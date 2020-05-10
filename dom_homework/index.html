@@ -1,0 +1,51 @@
+<!-- - Create a form in HTML with inputs for relevant data
+- When the form is submitted, access the data from the form in the form's submit `event` object
+- Create a list in HTML
+- Append the submitted data to the list
+- Add a "Delete All" `<button>` which clears all of the list items from the list -->
+
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video Game List App</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+        <script src="js/app.js"></script>
+    </head>
+    <body>
+    <form id="game-form">
+
+      
+  
+        <div class="form-item" id="title">
+            <label for="title">Game Title</label>
+            <input type="text" id="title" required/>
+        </div>
+
+        <div class="form-item" id="genre">
+            <label for="genre">Genre</label>
+            <input type="text" id="genre" required/>
+        </div>
+
+        <div class="form-item">
+            <label for="platform">Platform</label>
+            <select id="platform">
+              <option value="" disabled selected></option>
+              <option value="Playstation 4">Playstation 4</option>
+              <option value="Xbox One">Xbox One</option>
+              <option value="Nintendo Switch">Nintendo Switch</option>
+              <option value="PC">PC</option>
+    
+            </select>
+         </div>
+        
+            <input type="submit" value="submit" id="submit" required/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+    <ul id="game-list">Videogame List</ul>
+
+    </body>
+    </html>
